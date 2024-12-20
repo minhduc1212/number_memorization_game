@@ -1,4 +1,5 @@
 import random
+import os
 from time import sleep
 
 def random_number(a):
@@ -28,6 +29,7 @@ while True:
     correct = True
     random_number(a)
     sleep(2)
+    os.system('cls') 
     for i in range (a):
         print(f'Enter number {i} you saw:')
         f_input = int(input())
